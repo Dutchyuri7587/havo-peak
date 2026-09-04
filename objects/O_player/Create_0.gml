@@ -1,3 +1,5 @@
+get_controls();
+
 Xspeed = 2;
 Yspeed = 2;
 
