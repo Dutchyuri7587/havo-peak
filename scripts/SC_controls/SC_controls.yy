@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SC_controls",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SC_controls",
+  "parent":{
+    "name":"havo-peak",
+    "path":"havo-peak.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
