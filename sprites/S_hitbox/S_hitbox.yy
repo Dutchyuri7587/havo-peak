@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"sprites",
-    "path":"folders/sprites.yy",
+    "name":"havo-peak",
+    "path":"havo-peak.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

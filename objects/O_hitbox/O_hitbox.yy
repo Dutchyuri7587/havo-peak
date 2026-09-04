@@ -8,8 +8,8 @@
   "name":"O_hitbox",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"havo-peak",
+    "path":"havo-peak.yyp",
   },
   "parentObjectId":null,
   "persistent":false,
