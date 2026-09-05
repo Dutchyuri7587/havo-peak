@@ -1,11 +1,11 @@
-/*function get_controls()
+function get_controls()
 {
 	rightkey = keyboard_check(vk_right) + keyboard_check(ord("D"));
-		clamp = rightkey(0,1,rightkey);
+		rightkey = clamp(rightkey,0,1);
 	leftkey = keyboard_check(vk_left) + keyboard_check(ord("A"));
-		clamp = leftkey(0,1,leftkey);
+		leftkey = clamp(leftkey,0,1);
 	upkey = keyboard_check(vk_up) + keyboard_check(ord("W"));
-		clamp = upkey(0,1,upkey);
+		upkey = clamp(upkey,0,1);
 	downkey = keyboard_check(vk_down) + keyboard_check(ord("S"));
-		clamp = downkey(0,1,downkey);
-}*/
+		downkey = clamp(downkey,0,1);
+}
