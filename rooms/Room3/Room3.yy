@@ -36,8 +36,8 @@
   ],
   "name":"Room3",
   "parent":{
-    "name":"havo-peak",
-    "path":"havo-peak.yyp",
+    "name":"rooms",
+    "path":"folders/rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

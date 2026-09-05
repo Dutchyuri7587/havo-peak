@@ -24,7 +24,7 @@
   "name":"S_hitbox",
   "nineSlice":{
     "$GMNineSliceData":"",
-    "bottom":3,
+    "bottom":2,
     "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
@@ -40,7 +40,7 @@
       0,
       1,
     ],
-    "top":3,
+    "top":2,
   },
   "origin":0,
   "parent":{

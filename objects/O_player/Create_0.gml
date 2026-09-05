@@ -1,7 +1,8 @@
 get_controls();
 
-Xspeed = 2;
-Yspeed = 2;
+Xspeed = 0;
+Yspeed = 0;
 
-Xdirection = 0;
-Ydirection = 0;
+movespeed = 2;
+
+face = 1;
