@@ -27,6 +27,7 @@
   "resources":[
     {"id":{"name":"O_hitbox","path":"objects/O_hitbox/O_hitbox.yy",},},
     {"id":{"name":"O_player","path":"objects/O_player/O_player.yy",},},
+    {"id":{"name":"O_warp","path":"objects/O_warp/O_warp.yy",},},
     {"id":{"name":"R_setup","path":"rooms/R_setup/R_setup.yy",},},
     {"id":{"name":"R_test","path":"rooms/R_test/R_test.yy",},},
     {"id":{"name":"R_Tims_first_room","path":"rooms/R_Tims_first_room/R_Tims_first_room.yy",},},
@@ -34,6 +35,7 @@
     {"id":{"name":"S_hitbox","path":"sprites/S_hitbox/S_hitbox.yy",},},
     {"id":{"name":"S_player","path":"sprites/S_player/S_player.yy",},},
     {"id":{"name":"S_test_tileset","path":"sprites/S_test_tileset/S_test_tileset.yy",},},
+    {"id":{"name":"S_warp","path":"sprites/S_warp/S_warp.yy",},},
     {"id":{"name":"T_test","path":"tilesets/T_test/T_test.yy",},},
   ],
   "resourceType":"GMProject",
