@@ -10,8 +10,10 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"tilesets","folderPath":"folders/tilesets.yy","name":"tilesets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms","folderPath":"folders/rooms.yy","name":"rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"scripts","folderPath":"folders/scripts.yy","name":"scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"sprites","folderPath":"folders/sprites.yy","name":"sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
@@ -27,8 +29,7 @@
     {"id":{"name":"O_player","path":"objects/O_player/O_player.yy",},},
     {"id":{"name":"R_setup","path":"rooms/R_setup/R_setup.yy",},},
     {"id":{"name":"R_test","path":"rooms/R_test/R_test.yy",},},
-    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
-    {"id":{"name":"Tims_first_room","path":"rooms/Tims_first_room/Tims_first_room.yy",},},
+    {"id":{"name":"R_Tims_first_room","path":"rooms/R_Tims_first_room/R_Tims_first_room.yy",},},
     {"id":{"name":"SC_controls","path":"scripts/SC_controls/SC_controls.yy",},},
     {"id":{"name":"S_hitbox","path":"sprites/S_hitbox/S_hitbox.yy",},},
     {"id":{"name":"S_player","path":"sprites/S_player/S_player.yy",},},
@@ -40,8 +41,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"R_test","path":"rooms/R_test/R_test.yy",},},
     {"roomId":{"name":"R_setup","path":"rooms/R_setup/R_setup.yy",},},
-    {"roomId":{"name":"Tims_first_room","path":"rooms/Tims_first_room/Tims_first_room.yy",},},
-    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"roomId":{"name":"R_Tims_first_room","path":"rooms/R_Tims_first_room/R_Tims_first_room.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

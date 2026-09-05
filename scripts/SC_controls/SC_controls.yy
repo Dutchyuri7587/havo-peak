@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"SC_controls",
   "parent":{
-    "name":"havo-peak",
-    "path":"havo-peak.yyp",
+    "name":"scripts",
+    "path":"folders/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
