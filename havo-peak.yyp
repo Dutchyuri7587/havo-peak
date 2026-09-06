@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"music","folderPath":"folders/music.yy","name":"music","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms","folderPath":"folders/rooms.yy","name":"rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"scripts","folderPath":"folders/scripts.yy","name":"scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -27,6 +28,8 @@
   "resources":[
     {"id":{"name":"O_debug","path":"objects/O_debug/O_debug.yy",},},
     {"id":{"name":"O_hitbox","path":"objects/O_hitbox/O_hitbox.yy",},},
+    {"id":{"name":"O_music_player","path":"objects/O_music_player/O_music_player.yy",},},
+    {"id":{"name":"O_music_zone","path":"objects/O_music_zone/O_music_zone.yy",},},
     {"id":{"name":"O_player","path":"objects/O_player/O_player.yy",},},
     {"id":{"name":"O_transition","path":"objects/O_transition/O_transition.yy",},},
     {"id":{"name":"O_warp","path":"objects/O_warp/O_warp.yy",},},
@@ -34,7 +37,11 @@
     {"id":{"name":"R_test","path":"rooms/R_test/R_test.yy",},},
     {"id":{"name":"R_Tims_first_room","path":"rooms/R_Tims_first_room/R_Tims_first_room.yy",},},
     {"id":{"name":"SC_controls","path":"scripts/SC_controls/SC_controls.yy",},},
+    {"id":{"name":"SC_music_control","path":"scripts/SC_music_control/SC_music_control.yy",},},
+    {"id":{"name":"M_testmusic","path":"sounds/M_testmusic/M_testmusic.yy",},},
+    {"id":{"name":"M_testmusic2","path":"sounds/M_testmusic2/M_testmusic2.yy",},},
     {"id":{"name":"S_hitbox","path":"sprites/S_hitbox/S_hitbox.yy",},},
+    {"id":{"name":"S_music_zone","path":"sprites/S_music_zone/S_music_zone.yy",},},
     {"id":{"name":"S_player","path":"sprites/S_player/S_player.yy",},},
     {"id":{"name":"S_test_tileset","path":"sprites/S_test_tileset/S_test_tileset.yy",},},
     {"id":{"name":"S_transition","path":"sprites/S_transition/S_transition.yy",},},

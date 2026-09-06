@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SC_music_control",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SC_music_control",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

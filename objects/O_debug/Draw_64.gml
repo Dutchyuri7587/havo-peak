@@ -1,1 +1,4 @@
-draw_text_transformed(500,500,string(on),2,2,0)
+if on
+{
+	draw_text_transformed(500,500,string(on),2,2,0)
+}
