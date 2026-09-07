@@ -37,5 +37,5 @@
     "path":"sprites/S_music_player/S_music_player.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

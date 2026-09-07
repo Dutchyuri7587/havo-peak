@@ -7,6 +7,12 @@ if debugkey
 
 if on
 {
+	if keyboard_check_pressed(ord("1"))
+	{
+		room_goto(R_test);
+		O_player.x = 240;
+		O_player.y = 156;
+	}
 	if keyboard_check_pressed(ord("P"))
 	{
 		O_hitbox.visible = true;

@@ -36,5 +36,5 @@
     "path":"sprites/S_debug/S_debug.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
