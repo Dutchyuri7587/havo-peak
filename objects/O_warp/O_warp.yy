@@ -35,5 +35,5 @@
     "path":"sprites/S_warp/S_warp.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

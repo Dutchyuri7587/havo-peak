@@ -5,7 +5,6 @@ if debugkey
 	on = true;
 }
 
-
 if on
 {
 	if keyboard_check_pressed(ord("P"))
