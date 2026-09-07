@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"S_player_small",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":11,
   "bbox_left":2,
   "bbox_right":9,
-  "bbox_top":0,
+  "bbox_top":8,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
