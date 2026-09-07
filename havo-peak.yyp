@@ -36,6 +36,7 @@
     {"id":{"name":"O_transition","path":"objects/O_transition/O_transition.yy",},},
     {"id":{"name":"O_warp","path":"objects/O_warp/O_warp.yy",},},
     {"id":{"name":"R_setup","path":"rooms/R_setup/R_setup.yy",},},
+    {"id":{"name":"R_stage1_att1","path":"rooms/R_stage1_att1/R_stage1_att1.yy",},},
     {"id":{"name":"R_test","path":"rooms/R_test/R_test.yy",},},
     {"id":{"name":"R_Tims_first_room","path":"rooms/R_Tims_first_room/R_Tims_first_room.yy",},},
     {"id":{"name":"SC_controls","path":"scripts/SC_controls/SC_controls.yy",},},
@@ -57,6 +58,7 @@
     {"roomId":{"name":"R_setup","path":"rooms/R_setup/R_setup.yy",},},
     {"roomId":{"name":"R_test","path":"rooms/R_test/R_test.yy",},},
     {"roomId":{"name":"R_Tims_first_room","path":"rooms/R_Tims_first_room/R_Tims_first_room.yy",},},
+    {"roomId":{"name":"R_stage1_att1","path":"rooms/R_stage1_att1/R_stage1_att1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

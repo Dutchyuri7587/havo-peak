@@ -1,11 +1,11 @@
 //global volume controle
-global.mastervolume = 1;
+global.mastervolume = 0.3;
 global.musicvolume = 1;
 
 //info for the song you try to play or is playing
 songinstancing = noone;
 which_song = noone
-whichswapsong = M_testmusic;
+whichswapsong = M_testmusic; // starting song
 endfadeoutframes = 0; //amount of frames to fade out song with
 startfadeinframes = 0; //amount of frames to fade in with
 fadeininstvol = 1; //forgot honestly
