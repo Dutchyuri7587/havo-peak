@@ -27,8 +27,9 @@
   },
   "name":"havo-peak",
   "resources":[
+    {"id":{"name":"Deluxe16","path":"fonts/Deluxe16/Deluxe16.yy",},},
     {"id":{"name":"F_arcadeclassic","path":"fonts/F_arcadeclassic/F_arcadeclassic.yy",},},
-    {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},},
+    {"id":{"name":"Font3","path":"fonts/Font3/Font3.yy",},},
     {"id":{"name":"O_debug","path":"objects/O_debug/O_debug.yy",},},
     {"id":{"name":"O_hitbox","path":"objects/O_hitbox/O_hitbox.yy",},},
     {"id":{"name":"O_music_player","path":"objects/O_music_player/O_music_player.yy",},},
