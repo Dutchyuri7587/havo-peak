@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"S_music_player",
+    "path":"sprites/S_music_player/S_music_player.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
