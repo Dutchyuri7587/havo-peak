@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"S_debug",
+    "path":"sprites/S_debug/S_debug.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
