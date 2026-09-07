@@ -42,6 +42,7 @@
     {"id":{"name":"M_testmusic2","path":"sounds/M_testmusic2/M_testmusic2.yy",},},
     {"id":{"name":"S_hitbox","path":"sprites/S_hitbox/S_hitbox.yy",},},
     {"id":{"name":"S_music_zone","path":"sprites/S_music_zone/S_music_zone.yy",},},
+    {"id":{"name":"S_player_1","path":"sprites/S_player_1/S_player_1.yy",},},
     {"id":{"name":"S_player","path":"sprites/S_player/S_player.yy",},},
     {"id":{"name":"S_test_tileset","path":"sprites/S_test_tileset/S_test_tileset.yy",},},
     {"id":{"name":"S_transition","path":"sprites/S_transition/S_transition.yy",},},
