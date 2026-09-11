@@ -22,7 +22,9 @@
     {"$GMFolder":"","%Name":"tilesets","folderPath":"folders/tilesets.yy","name":"tilesets","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"spritesheet V2 havo peak.aseprite","CopyToMask":-1,"filePath":"datafiles","name":"spritesheet V2 havo peak.aseprite","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -40,6 +42,7 @@
     {"id":{"name":"O_player","path":"objects/O_player/O_player.yy",},},
     {"id":{"name":"O_transition","path":"objects/O_transition/O_transition.yy",},},
     {"id":{"name":"O_warp","path":"objects/O_warp/O_warp.yy",},},
+    {"id":{"name":"R_first_room","path":"rooms/R_first_room/R_first_room.yy",},},
     {"id":{"name":"R_setup","path":"rooms/R_setup/R_setup.yy",},},
     {"id":{"name":"R_stage1_att1","path":"rooms/R_stage1_att1/R_stage1_att1.yy",},},
     {"id":{"name":"R_test","path":"rooms/R_test/R_test.yy",},},
@@ -70,6 +73,7 @@
     {"roomId":{"name":"R_test","path":"rooms/R_test/R_test.yy",},},
     {"roomId":{"name":"R_Tims_first_room","path":"rooms/R_Tims_first_room/R_Tims_first_room.yy",},},
     {"roomId":{"name":"R_stage1_att1","path":"rooms/R_stage1_att1/R_stage1_att1.yy",},},
+    {"roomId":{"name":"R_first_room","path":"rooms/R_first_room/R_first_room.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
