@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"deuren",
-    "path":"folders/sprites/deuren.yy",
+    "name":"doors",
+    "path":"folders/sprites/doors.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
