@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"S_hav_testshet",
-    "path":"sprites/S_hav_testshet/S_hav_testshet.yy",
+    "name":"S_hav_testsheet",
+    "path":"sprites/S_hav_testsheet/S_hav_testsheet.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
