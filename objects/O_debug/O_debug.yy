@@ -10,8 +10,8 @@
   "name":"O_debug",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"debug",
+    "path":"folders/objects/debug.yy",
   },
   "parentObjectId":null,
   "persistent":true,
