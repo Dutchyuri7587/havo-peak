@@ -34,5 +34,5 @@
     "path":"sprites/S_Dsettings/S_Dsettings.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

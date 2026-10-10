@@ -14,4 +14,6 @@ function get_controls()
 		
 	debugkey = keyboard_check_pressed(vk_backspace) + keyboard_check_pressed(ord("L"));
 		debugkey = clamp(debugkey,0,1);
+	acceptkey = keyboard_check_pressed(ord("Z"));
+		acceptkey = clamp(acceptkey,0,1);
 }
