@@ -1,0 +1,4 @@
+function SC_dialogue()
+{
+
+}

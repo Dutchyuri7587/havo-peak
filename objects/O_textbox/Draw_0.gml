@@ -18,7 +18,7 @@ if !setup
 		length_text[p] = string_length(text[p]);
 		
 		//centered
-		text_x_offset[p] = 44;
+		text_x_offset[p] = 42; // this one is a general x offset for both dialogue and textbox
 	}
 }
 #endregion

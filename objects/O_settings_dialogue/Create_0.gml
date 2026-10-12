@@ -1,1 +1,1 @@
-global.font_main = F_arcadeclassic;
+global.font_main = F_tinyandchunky;
