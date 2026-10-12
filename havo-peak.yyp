@@ -81,6 +81,7 @@
     {"id":{"name":"S_mysteryman","path":"sprites/S_mysteryman/S_mysteryman.yy",},},
     {"id":{"name":"S_player_small","path":"sprites/S_player_small/S_player_small.yy",},},
     {"id":{"name":"S_player","path":"sprites/S_player/S_player.yy",},},
+    {"id":{"name":"S_speak_block","path":"sprites/S_speak_block/S_speak_block.yy",},},
     {"id":{"name":"S_test_tileset","path":"sprites/S_test_tileset/S_test_tileset.yy",},},
     {"id":{"name":"S_transition","path":"sprites/S_transition/S_transition.yy",},},
     {"id":{"name":"S_warp","path":"sprites/S_warp/S_warp.yy",},},
