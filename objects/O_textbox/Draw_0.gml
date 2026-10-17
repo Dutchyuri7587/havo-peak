@@ -79,7 +79,7 @@ if draw_character == length_text[page] && page == nof_pages - 1
 {
 	var _option_space = 15; //vertical space between options
 	var _option_border = 4; // same as textbox border
-	for (var op = 0; op < option_number[0]; op++)
+	for (var op = 0; op < option_number; op++)
 	{
 		var _option_width = string_width(option[op]) + _option_border*2;
 		
