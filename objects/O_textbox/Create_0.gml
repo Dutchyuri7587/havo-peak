@@ -39,3 +39,11 @@ text[3] = "short king"
 text[4] = "a aa aaa aaaa aaaaa aaazasaaaa "
 text[5] = "Dit is een lange text met correcte spaties n shit. Ik hoop dat de spacing hier wel goed werkt :D"*/
 #endregion
+
+#region options
+option[0] = "";
+option_link_id[0] = -1;
+
+option_position[0] = 0;
+option_number[0] = 0;
+#endregion
