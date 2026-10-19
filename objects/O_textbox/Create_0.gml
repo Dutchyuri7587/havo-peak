@@ -17,7 +17,6 @@ textbox_sprite = S_dialogue_box;
 textbox_image = 0;
 textbox_image_speed = 1/60; // speed moet zijn de fps van de sprite gedeeld door 60 (de game's fps)
 #endregion
-
 #region text
 page = 0;
 text[0] = "";
@@ -30,16 +29,6 @@ setup = false;
 
 nof_pages = 0;
 #endregion
-
-#region dialogue
-/*
-text[1] = "this is some test dialogue, hey tim, hoe gaat ie lmao"
-text[2] = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa dit is om te kijken hoe lange text werkt aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa boe"
-text[3] = "short king"
-text[4] = "a aa aaa aaaa aaaaa aaazasaaaa "
-text[5] = "Dit is een lange text met correcte spaties n shit. Ik hoop dat de spacing hier wel goed werkt :D"*/
-#endregion
-
 #region options
 option[0] = "";
 option_link_id[0] = -1;

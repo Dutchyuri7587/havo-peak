@@ -39,6 +39,14 @@ if acceptkey
 		}
 		else
 		{
+			
+			//linking if options in dialogue
+			if option_number > 0
+			{
+				
+			}
+			
+			
 			instance_destroy();
 		}
 	}
@@ -48,10 +56,6 @@ if acceptkey
 	}
 }
 #endregion
-
-
-
-
 #region making the textbox
 var _textbox_x = box_x + text_x_offset[page];
 var _textbox_y = box_y;
@@ -77,14 +81,28 @@ c_white,
 #region options
 if draw_character == length_text[page] && page == nof_pages - 1
 {
+	
+	//sdelecting
+	option_position += downkey - upkey;
+	option_position = clamp(option_position,0,option_number-1);
+	
+	//drawing
 	var _option_space = 15; //vertical space between options
 	var _option_border = 4; // same as textbox border
 	for (var op = 0; op < option_number; op++)
 	{
 		var _option_width = string_width(option[op]) + _option_border*2;
 		
+		//box
 		draw_sprite_ext(textbox_sprite, textbox_image, _textbox_x + 16,  _textbox_y - _option_space*option_number + _option_space*op, _option_width/textbox_sprite_width, (_option_space-1)/textbox_sprite_height, 0, c_white, 1 )
 		
+		//arrow
+		if option_position == op
+		{
+			draw_sprite(S_dialogue_option_arrow, 0, _textbox_x, _textbox_y - _option_space*option_number + _option_space*op);
+		}
+		
+		//text
 		draw_text(_textbox_x+16+_option_border, _textbox_y - _option_space*option_number + _option_space*op+2, option[op]);
 	}
 }
