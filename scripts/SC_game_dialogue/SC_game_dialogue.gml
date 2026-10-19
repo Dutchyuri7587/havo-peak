@@ -14,8 +14,8 @@ function SC_game_dialogue(_text_id)
 		break;
 		case "example_3":
 			SC_text("You will have 2 options, choose correctly. Or else.");
-				SC_option("option 1", "option 1")
-				SC_option("option 2", "option 2")
+				SC_option("option 1!!", "option 1")
+				SC_option("option 2!!!!!", "option 2")
 		break;
 			case "option 1":
 				SC_text("Correct!");

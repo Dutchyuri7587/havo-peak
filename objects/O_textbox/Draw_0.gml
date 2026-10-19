@@ -43,9 +43,8 @@ if acceptkey
 			//linking if options in dialogue
 			if option_number > 0
 			{
-				
+				create_textbox(option_link_id[option_position]);
 			}
-			
 			
 			instance_destroy();
 		}
