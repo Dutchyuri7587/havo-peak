@@ -6,3 +6,5 @@ Yspeed = 0;
 movespeed = 2;
 
 face = 1;
+
+in_dialogue = false;

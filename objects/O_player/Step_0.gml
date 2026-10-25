@@ -15,22 +15,25 @@ if place_meeting(x,y+Yspeed,O_hitbox)
 #endregion
 
 #region movement
-if rightkey
+if !in_dialogue
 {
-	face = 1
-	x += Xspeed
-}
-if leftkey
-{
-	face = -1
-	x += Xspeed
-}
-if upkey
-{
-	y += Yspeed
-}
-if downkey
-{
-	y += Yspeed
+	if rightkey
+	{
+		face = 1
+		x += Xspeed
+	}
+	if leftkey
+	{
+		face = -1
+		x += Xspeed
+	}
+	if upkey
+	{
+		y += Yspeed
+	}
+	if downkey
+	{
+		y += Yspeed
+	}
 }
 #endregion

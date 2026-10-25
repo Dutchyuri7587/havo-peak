@@ -17,6 +17,60 @@ if !setup
 		
 		//centered
 		text_x_offset[p] = 42; // this one is a general x offset for both dialogue and textbox
+		
+		for (var c = 0; c < length_text[p]; c++)
+		{
+			var _character_position = c+1;
+			
+			character[c, p] = string_char_at(text[p], _character_position);
+			
+			//get width of line
+			var _text_up_to_character = string_copy(text[p], 1, _character_position);
+			var _current_text_width = string_width(_text_up_to_character) - string_width(character[c, p]);
+			
+			//get last free space
+			if character[c, p] = " " {last_free_space = _character_position+1};
+			
+			//get line breaks
+			if _current_text_width - line_break_offset[p] > line_width
+			{
+				line_break_position[line_break_number[p], p] = last_free_space;
+				line_break_number[p]++;
+				var _text_up_to_last_space = string_copy(text[p], 1, last_free_space);
+				var _last_free_space_string = string_char_at(text[p], last_free_space);
+				line_break_offset[p] = string_width(_text_up_to_last_space) - string_width(_last_free_space_string);
+			}
+		}
+		
+		//new verse, same as the first
+		for (var c = 0; c < length_text[p]; c++)
+		{
+			var _character_position = c+1;
+			
+			var _text_x = box_x + text_x_offset[p] + border_offset;
+			var _text_y = box_y + border_offset;
+			
+			//get width of line
+			var _text_up_to_character = string_copy(text[p], 1, _character_position);
+			var _current_text_width = string_width(_text_up_to_character) - string_width(character[c, p]);
+			var _text_line = 0;
+			
+			//compensate for string breaks
+			for (var lb = 0; lb < line_break_number[p]; lb++)
+			{
+				if _character_position >= line_break_position[lb, p]
+				{
+					var _string_copy = string_copy(text[p], line_break_position[lb, p], _character_position - line_break_position[lb, p]);
+					_current_text_width = string_width(_string_copy);
+					
+					//record the line this character should be on
+					_text_line = lb+1; // it normally starts on 0 so its +1
+				}
+			}
+			//add to x & y based on the new info
+			character_x[c, p] = _text_x + _current_text_width;
+			character_y[c, p] = _text_y + _text_line * line_seperation;
+		}
 	}
 }
 #endregion
@@ -38,14 +92,12 @@ if acceptkey
 			draw_character = 0;
 		}
 		else
-		{
-			
+		{	
 			//linking if options in dialogue
 			if option_number > 0
 			{
 				create_textbox(option_link_id[option_position]);
 			}
-			
 			instance_destroy();
 		}
 	}
@@ -106,11 +158,11 @@ if draw_character == length_text[page] && page == nof_pages - 1
 	}
 }
 #endregion
-
-
-
+#region final text
 //draw text
-var _drawtext = string_copy(text[page], 1, draw_character);
-
-draw_text_ext(_textbox_x + border_offset, _textbox_y + border_offset, _drawtext, line_seperation, line_width)
-
+for(var c = 0; c < draw_character; c++)
+{
+	//the text
+	draw_text(character_x[c, page], character_y[c, page], character[c, page]);
+}
+#endregion

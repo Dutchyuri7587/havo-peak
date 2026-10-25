@@ -28,6 +28,10 @@ speed_text = 1; // take a wild fucking guess
 setup = false;
 
 nof_pages = 0;
+
+character[0, 0] = "";
+character_x[0, 0] = 0;
+character_y[0, 0] = 0;
 #endregion
 #region options
 option[0] = "";
@@ -35,4 +39,9 @@ option_link_id[0] = -1;
 
 option_position = 0;
 option_number = 0;
+#endregion
+
+#region effects
+SC_set_defaults_for_text();
+last_free_space = 0;
 #endregion

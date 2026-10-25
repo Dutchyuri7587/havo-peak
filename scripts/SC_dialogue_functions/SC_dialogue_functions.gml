@@ -1,6 +1,17 @@
+function SC_set_defaults_for_text()
+{
+	line_break_position[0, nof_pages] = 999; // fixes the text wrapping
+	line_break_number[nof_pages] = 0;
+	line_break_offset[nof_pages] = 0;
+}
+
+
 /// @param text
 function SC_text(_text)
 {
+	
+	SC_set_defaults_for_text();
+	
 	text[nof_pages] = _text;
 	
 	nof_pages++;
