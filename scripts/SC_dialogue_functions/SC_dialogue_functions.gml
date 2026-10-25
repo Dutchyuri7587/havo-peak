@@ -3,6 +3,10 @@ function SC_set_defaults_for_text()
 	line_break_position[0, nof_pages] = 999; // fixes the text wrapping
 	line_break_number[nof_pages] = 0;
 	line_break_offset[nof_pages] = 0;
+	
+	textbox_sprite[nof_pages] = S_dialogue_box
+	speaker_sprite[nof_pages] = noone;
+	speaker_side[nof_pages] = 1;
 }
 
 

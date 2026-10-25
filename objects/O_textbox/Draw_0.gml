@@ -13,10 +13,26 @@ if !setup
 	
 	for (var p = 0; p < nof_pages; p++) // p stands for page
 	{
+		//how many characters are on each page
 		length_text[p] = string_length(text[p]);
 		
-		//centered
-		text_x_offset[p] = 42; // this one is a general x offset for both dialogue and textbox
+		//get x position for textbox
+			//speaker on the left
+			text_x_offset[p] = 72;
+			portrait_x_offset[p] = 24;
+			
+			//speaker on the right
+			if speaker_side == -1
+			{
+				text_x_offset[p] = 24;
+				portrait_x_offset[p] = 180;
+			}
+		
+			//if there is no speaker
+			if speaker_sprite == noone;
+			{
+				text_x_offset[p] = 42; // this one is a general x offset for both dialogue and textbox
+			}
 		
 		for (var c = 0; c < length_text[p]; c++)
 		{
@@ -112,13 +128,24 @@ var _textbox_x = box_x + text_x_offset[page];
 var _textbox_y = box_y;
 
 textbox_image += textbox_image_speed;
-textbox_sprite_width = sprite_get_width(textbox_sprite);
-textbox_sprite_height = sprite_get_height(textbox_sprite);
+textbox_sprite_width = sprite_get_width(textbox_sprite[page]);
+textbox_sprite_height = sprite_get_height(textbox_sprite[page]);
+
+//speaker portrait
+if speaker_sprite[page] != noone
+{
+	sprite_index = speaker_sprite[page];
+	var _speaker_x = box_x + portrait_x_offset[page];
+	if speaker_side[page] == -1 {_speaker_x += sprite_width};
+	//draw speaker
+	draw_sprite_ext(textbox_sprite[page], textbox_image, box_x + portrait_x_offset[page], box_y, sprite_width/textbox_sprite_width, sprite_height/textbox_sprite_height, 0, c_white, 1); // box
+	draw_sprite_ext(sprite_index, image_index, _speaker_x, box_y, speaker_side[page], 1, 0, c_white, 1);
+}
 
 //back of textbox
 draw_sprite_ext
 (
-textbox_sprite, 
+textbox_sprite[page], 
 textbox_image, 
 _textbox_x, 
 _textbox_y, 
@@ -145,7 +172,7 @@ if draw_character == length_text[page] && page == nof_pages - 1
 		var _option_width = string_width(option[op]) + _option_border*2;
 		
 		//box
-		draw_sprite_ext(textbox_sprite, textbox_image, _textbox_x + 16,  _textbox_y - _option_space*option_number + _option_space*op, _option_width/textbox_sprite_width, (_option_space-1)/textbox_sprite_height, 0, c_white, 1 )
+		draw_sprite_ext(textbox_sprite[page], textbox_image, _textbox_x + 16,  _textbox_y - _option_space*option_number + _option_space*op, _option_width/textbox_sprite_width, (_option_space-1)/textbox_sprite_height, 0, c_white, 1 )
 		
 		//arrow
 		if option_position == op

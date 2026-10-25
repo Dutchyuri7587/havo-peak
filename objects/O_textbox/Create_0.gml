@@ -1,6 +1,6 @@
 get_controls();
 depth = -1000000;
-#region dimensions
+#region parameters
 textbox_width = 156;
 textbox_height = 48;
 
@@ -13,7 +13,7 @@ camera_offset_y = 128;
 
 //for animating
 //dit is los zodat de textbox los genanimeerd kan zijn van de rest van de text/emotion sprites
-textbox_sprite = S_dialogue_box;
+textbox_sprite[0] = S_dialogue_box;
 textbox_image = 0;
 textbox_image_speed = 1/60; // speed moet zijn de fps van de sprite gedeeld door 60 (de game's fps)
 #endregion
