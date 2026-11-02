@@ -88,6 +88,7 @@
     {"id":{"name":"S_mysteryman","path":"sprites/S_mysteryman/S_mysteryman.yy",},},
     {"id":{"name":"S_player_small","path":"sprites/S_player_small/S_player_small.yy",},},
     {"id":{"name":"S_player","path":"sprites/S_player/S_player.yy",},},
+    {"id":{"name":"S_prot_alt_neutral","path":"sprites/S_prot_alt_neutral/S_prot_alt_neutral.yy",},},
     {"id":{"name":"S_prot_happy","path":"sprites/S_prot_happy/S_prot_happy.yy",},},
     {"id":{"name":"S_prot_neutral","path":"sprites/S_prot_neutral/S_prot_neutral.yy",},},
     {"id":{"name":"S_speak_block","path":"sprites/S_speak_block/S_speak_block.yy",},},

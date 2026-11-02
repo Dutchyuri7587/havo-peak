@@ -9,14 +9,42 @@ function SC_set_defaults_for_text()
 	speaker_side[nof_pages] = 1;
 }
 
-
 /// @param text
+/// @param [character]
+/// @param [side]
 function SC_text(_text)
 {
 	
 	SC_set_defaults_for_text();
 	
 	text[nof_pages] = _text;
+	
+	
+	if argument_count > 1
+	{
+		switch(argument[1])
+		{
+			case "portrait_test":
+				speaker_sprite[nof_pages] = S_prot_neutral;
+				textbox_sprite[nof_pages] = S_dialogue_box;
+				break;
+			case "portrait_test_h":
+				speaker_sprite[nof_pages] = S_prot_happy;
+				textbox_sprite[nof_pages] = S_dialogue_box_alt1;
+				break;
+				
+			case "portrait_test_alt":
+				speaker_sprite[nof_pages] = S_prot_alt_neutral;
+				textbox_sprite[nof_pages] = S_dialogue_box_alt2;
+				break;
+		}
+	}
+	
+	//which side
+	if argument_count > 2
+	{
+		speaker_side[nof_pages] = argument[2];
+	}
 	
 	nof_pages++;
 }

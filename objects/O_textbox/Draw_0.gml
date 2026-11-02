@@ -10,7 +10,6 @@ if !setup
 	draw_set_font(global.font_main);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
-	
 	for (var p = 0; p < nof_pages; p++) // p stands for page
 	{
 		//how many characters are on each page
@@ -29,7 +28,7 @@ if !setup
 			}
 		
 			//if there is no speaker
-			if speaker_sprite == noone;
+			if speaker_sprite == noone
 			{
 				text_x_offset[p] = 42; // this one is a general x offset for both dialogue and textbox
 			}
@@ -135,6 +134,7 @@ textbox_sprite_height = sprite_get_height(textbox_sprite[page]);
 if speaker_sprite[page] != noone
 {
 	sprite_index = speaker_sprite[page];
+	if draw_character == length_text[page] {image_index = 0};
 	var _speaker_x = box_x + portrait_x_offset[page];
 	if speaker_side[page] == -1 {_speaker_x += sprite_width};
 	//draw speaker

@@ -23,6 +23,21 @@ function SC_game_dialogue(_text_id)
 			case "option 2":
 				SC_text("Wrong, no more free ham sandwhich day for you!");
 			break;
+		
+		case "example_portrait":
+			SC_text("Woah! I have an actual face now!", "portrait_test");
+			SC_text("Pretty snazzy icl", "portrait_test");
+			SC_text("testing without portrait");
+		break;
+		case "example_portrait_h":
+			SC_text("I'm happy!", "portrait_test_h");
+			SC_text("Did you notice that? You can tell by the fact my eyes are closed upwards!!!!", "portrait_test_h");
+		break;
+		
+		case "example_portrait_evil":
+			SC_text("Someone replaced my colours :(", "portrait_test_alt", -1);
+			SC_text("This makes me sad DDDDDDD:", "portrait_test_alt", -1);
+		break;
 		#endregion
 	}
 }
