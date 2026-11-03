@@ -12,6 +12,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"fonts","folderPath":"folders/fonts.yy","name":"fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"music","folderPath":"folders/music.yy","name":"music","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"sfx","folderPath":"folders/music/sfx.yy","name":"sfx","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"debug","folderPath":"folders/objects/debug.yy","name":"debug","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Dialogue","folderPath":"folders/objects/Dialogue.yy","name":"Dialogue","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -65,6 +66,9 @@
     {"id":{"name":"SC_music_control","path":"scripts/SC_music_control/SC_music_control.yy",},},
     {"id":{"name":"M_testmusic","path":"sounds/M_testmusic/M_testmusic.yy",},},
     {"id":{"name":"M_testmusic2","path":"sounds/M_testmusic2/M_testmusic2.yy",},},
+    {"id":{"name":"SFX_high","path":"sounds/SFX_high/SFX_high.yy",},},
+    {"id":{"name":"SFX_low","path":"sounds/SFX_low/SFX_low.yy",},},
+    {"id":{"name":"SFX_medium","path":"sounds/SFX_medium/SFX_medium.yy",},},
     {"id":{"name":"S_corn","path":"sprites/S_corn/S_corn.yy",},},
     {"id":{"name":"S_debug","path":"sprites/S_debug/S_debug.yy",},},
     {"id":{"name":"S_dialogue_box_alt1","path":"sprites/S_dialogue_box_alt1/S_dialogue_box_alt1.yy",},},

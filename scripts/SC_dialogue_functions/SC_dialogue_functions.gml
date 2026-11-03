@@ -7,6 +7,7 @@ function SC_set_defaults_for_text()
 	textbox_sprite[nof_pages] = S_dialogue_box
 	speaker_sprite[nof_pages] = noone;
 	speaker_side[nof_pages] = 1;
+	sound[nof_pages] = SFX_medium;
 }
 
 /// @param text
@@ -27,15 +28,18 @@ function SC_text(_text)
 			case "portrait_test":
 				speaker_sprite[nof_pages] = S_prot_neutral;
 				textbox_sprite[nof_pages] = S_dialogue_box;
+				sound[nof_pages] = SFX_medium;
 				break;
 			case "portrait_test_h":
 				speaker_sprite[nof_pages] = S_prot_happy;
 				textbox_sprite[nof_pages] = S_dialogue_box_alt1;
+				sound[nof_pages] = SFX_high;
 				break;
 				
 			case "portrait_test_alt":
 				speaker_sprite[nof_pages] = S_prot_alt_neutral;
 				textbox_sprite[nof_pages] = S_dialogue_box_alt2;
+				sound[nof_pages] = SFX_low;
 				break;
 		}
 	}

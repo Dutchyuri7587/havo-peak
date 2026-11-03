@@ -97,10 +97,44 @@ if !setup
 }
 #endregion
 #region typing
-if draw_character < length_text[page]
+if text_pause_timer <= 0
 {
-	draw_character += speed_text;
-	draw_character = clamp(draw_character,0,length_text[page]);
+	
+	
+	if draw_character < length_text[page]
+	{
+		
+		
+		draw_character += speed_text;
+		draw_character = clamp(draw_character,0,length_text[page]);
+		var _check_character = string_char_at(text[page], draw_character);
+		if _check_character == "." || _check_character == "?" || _check_character == "!"
+		{
+			text_pause_timer = text_pause_time;
+			if ! audio_is_playing(sound[page])
+			{
+				audio_play_sound(sound[page], 7, false);
+			}
+		}
+		else
+		{
+			//type sound
+			if sound_count < sound_delay
+			{
+				sound_count++;
+			}
+			else
+			{
+				sound_count = 0;
+				audio_play_sound(sound[page], 5, false);
+			}
+		}
+		
+	}
+}
+else
+{
+	text_pause_timer--;
 }
 #endregion
 #region go through pages

@@ -17,6 +17,7 @@ textbox_sprite[0] = S_dialogue_box;
 textbox_image = 0;
 textbox_image_speed = 1/60; // speed moet zijn de fps van de sprite gedeeld door 60 (de game's fps)
 #endregion
+
 #region text
 page = 0;
 text[0] = "";
@@ -33,6 +34,7 @@ character[0, 0] = "";
 character_x[0, 0] = 0;
 character_y[0, 0] = 0;
 #endregion
+
 #region options
 option[0] = "";
 option_link_id[0] = -1;
@@ -41,7 +43,14 @@ option_position = 0;
 option_number = 0;
 #endregion
 
+#region sound
+sound_delay = 4;
+sound_count = sound_delay;
+#endregion
+
 #region effects
 SC_set_defaults_for_text();
 last_free_space = 0;
+text_pause_timer = 0;
+text_pause_time = 16;
 #endregion
