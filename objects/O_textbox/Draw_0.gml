@@ -239,7 +239,26 @@ for(var c = 0; c < draw_character; c++)
 		_float_y = dsin(float_direction[c, page])
 	}
 	
+	//shake text
+	var _shake_x = 0;
+	var _shake_y = 0;
+	if shake_text[c, page] == true
+	{
+		shake_timer[c, page]--;
+		if shake_timer[c, page] <= 0
+		{
+			shake_timer[c, page] = irandom_range(3,5);
+			shake_direction[c, page] = irandom(360);
+		}
+		if shake_timer[c, page] <= 2
+		{
+			_shake_x = lengthdir_x(1, shake_direction[c, page]);
+			_shake_y = lengthdir_y(1, shake_direction[c, page]);
+		}
+	}
+	
+	
 	//the text
-	draw_text_colour(character_x[c, page], character_y[c, page] + _float_y, character[c, page], colour_1[c, page], colour_2[c, page], colour_3[c, page], colour_4[c, page], 1);
+	draw_text_colour(character_x[c, page] + _shake_x, character_y[c, page] + _float_y + _shake_y, character[c, page], colour_1[c, page], colour_2[c, page], colour_3[c, page], colour_4[c, page], 1);
 }
 #endregion

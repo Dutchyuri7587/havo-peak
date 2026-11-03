@@ -44,8 +44,9 @@ function SC_game_dialogue(_text_id)
 				SC_text_coloured(0,3,c_red,c_red,c_red,c_red);
 				SC_text_coloured(26,39,c_purple,c_purple,c_purple,c_purple)
 			SC_text("WoooOOoooOOoooooOOOOo!", "portrait_test_h", 1);
-				SC_text_float(0,26)
+				SC_text_float(0,26);
 			SC_text("We don't have capital letters dingus.", "portrait_test_alt", -1);
+				SC_text_shake(30, 36);
 		break;
 		#endregion
 	}

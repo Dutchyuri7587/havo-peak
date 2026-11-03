@@ -19,6 +19,10 @@ function SC_set_defaults_for_text()
 		
 		float_text[c, nof_pages] = 0;
 		float_direction[c, nof_pages] = c*20;
+		
+		shake_text[c, nof_pages] = 0;
+		shake_direction[c, nof_pages] = irandom(360);
+		shake_timer[c, nof_pages] = irandom(6);
 	}
 }
 
@@ -48,6 +52,16 @@ function SC_text_float(_start, _end)
 	for (var c = _start; c <= _end; c++)
 	{
 		float_text[c, nof_pages-1] = true;
+	}
+}
+
+/// @param no1
+/// @param [no2]
+function SC_text_shake(_start, _end)
+{
+	for (var c = _start; c <= _end; c++)
+	{
+		shake_text[c, nof_pages-1] = true;
 	}
 }
 
