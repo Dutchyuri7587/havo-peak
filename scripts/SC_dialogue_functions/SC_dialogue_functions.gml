@@ -16,6 +16,9 @@ function SC_set_defaults_for_text()
 		colour_2[c, nof_pages] = c_white;
 		colour_3[c, nof_pages] = c_white;
 		colour_4[c, nof_pages] = c_white;
+		
+		float_text[c, nof_pages] = 0;
+		float_direction[c, nof_pages] = c*20;
 	}
 }
 
@@ -35,6 +38,16 @@ function SC_text_coloured(_start, _end, _col1, _col2, _col3, _col4)
 		colour_2[c, nof_pages-1] = _col2;
 		colour_3[c, nof_pages-1] = _col3;
 		colour_4[c, nof_pages-1] = _col4;
+	}
+}
+
+/// @param no1
+/// @param [no2]
+function SC_text_float(_start, _end)
+{
+	for (var c = _start; c <= _end; c++)
+	{
+		float_text[c, nof_pages-1] = true;
 	}
 }
 

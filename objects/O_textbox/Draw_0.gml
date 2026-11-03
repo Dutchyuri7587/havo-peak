@@ -230,7 +230,16 @@ if draw_character == length_text[page] && page == nof_pages - 1
 //draw text
 for(var c = 0; c < draw_character; c++)
 {
+	//////-----some bullshit (special stuff)------/////
+	//floating text
+	var _float_y = 0;
+	if float_text[c, page] == true
+	{
+		float_direction[c, page] += -6;
+		_float_y = dsin(float_direction[c, page])
+	}
+	
 	//the text
-	draw_text_colour(character_x[c, page], character_y[c, page], character[c, page], colour_1[c, page], colour_2[c, page], colour_3[c, page], colour_4[c, page], 1);
+	draw_text_colour(character_x[c, page], character_y[c, page] + _float_y, character[c, page], colour_1[c, page], colour_2[c, page], colour_3[c, page], colour_4[c, page], 1);
 }
 #endregion

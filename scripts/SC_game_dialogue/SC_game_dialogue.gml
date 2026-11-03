@@ -39,10 +39,13 @@ function SC_game_dialogue(_text_id)
 			SC_text("This makes me sad DDDDDDD:", "portrait_test_alt", -1);
 		break;
 		
-		case "example_colours":
-			SC_text("Tim, I remember you're...... BI-CURIOUSES", "portrait_test_alt", -1);
+		case "example_vfx":
+			SC_text("Tim, I remember you're... BI-CURIOUSES", "portrait_test_alt", -1);
 				SC_text_coloured(0,3,c_red,c_red,c_red,c_red);
-				SC_text_coloured(29,41,c_purple,c_purple,c_purple,c_purple)
+				SC_text_coloured(26,39,c_purple,c_purple,c_purple,c_purple)
+			SC_text("WoooOOoooOOoooooOOOOo!", "portrait_test_h", 1);
+				SC_text_float(0,26)
+			SC_text("We don't have capital letters dingus.", "portrait_test_alt", -1);
 		break;
 		#endregion
 	}
