@@ -6,32 +6,39 @@ box_y = camera_get_view_y(view_camera[0]) + camera_offset_y;
 #region setup
 if !setup
 {
+	
 	setup = true;
 	draw_set_font(global.font_main);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
+	
 	for (var p = 0; p < nof_pages; p++) // p stands for page
 	{
+		
 		//how many characters are on each page
 		length_text[p] = string_length(text[p]);
+		
 		
 		//get x position for textbox
 			//speaker on the left
 			text_x_offset[p] = 72;
 			portrait_x_offset[p] = 24;
 			
+			
 			//speaker on the right
-			if speaker_side == -1
+			if speaker_side[p] == -1
 			{
 				text_x_offset[p] = 24;
-				portrait_x_offset[p] = 180;
+				portrait_x_offset[p] = 186;
 			}
 		
+		
 			//if there is no speaker
-			if speaker_sprite == noone
+			if speaker_sprite[p] == noone
 			{
 				text_x_offset[p] = 42; // this one is a general x offset for both dialogue and textbox
 			}
+		
 		
 		for (var c = 0; c < length_text[p]; c++)
 		{
