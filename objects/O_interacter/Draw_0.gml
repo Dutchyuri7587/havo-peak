@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index, image_index, x, y, image_xscale*O_player.face, image_yscale, 0, c_white, 1);

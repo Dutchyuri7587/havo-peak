@@ -1,0 +1,1 @@
+destroytimer = 10;

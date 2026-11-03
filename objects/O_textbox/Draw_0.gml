@@ -176,26 +176,20 @@ if speaker_sprite[page] != noone
 {
 	sprite_index = speaker_sprite[page];
 	if draw_character == length_text[page] {image_index = 0};
+	
 	var _speaker_x = box_x + portrait_x_offset[page];
 	if speaker_side[page] == -1 {_speaker_x += sprite_width};
+	
 	//draw speaker
 	draw_sprite_ext(textbox_sprite[page], textbox_image, box_x + portrait_x_offset[page], box_y, sprite_width/textbox_sprite_width, sprite_height/textbox_sprite_height, 0, c_white, 1); // box
+	
 	draw_sprite_ext(sprite_index, image_index, _speaker_x, box_y, speaker_side[page], 1, 0, c_white, 1);
 }
 
 //back of textbox
 draw_sprite_ext
-(
-textbox_sprite[page], 
-textbox_image, 
-_textbox_x, 
-_textbox_y, 
-textbox_width/textbox_sprite_width, 
-textbox_height/textbox_sprite_height,
-0,
-c_white,
-1
-)
+(textbox_sprite[page], textbox_image, _textbox_x, _textbox_y, 
+textbox_width/textbox_sprite_width, textbox_height/textbox_sprite_height, 0, c_white, 1)
 #endregion
 #region options
 if draw_character == length_text[page] && page == nof_pages - 1

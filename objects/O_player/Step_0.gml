@@ -37,3 +37,17 @@ if !in_dialogue
 	}
 }
 #endregion
+
+#region interaction
+if acceptkey && !in_dialogue
+{
+	interact_timer = interact_time;
+	//in_dialogue = true;
+	instance_create_depth(x, y-16, -50, O_interacter)
+}
+
+if interact_timer > 0
+{
+	interact_timer--;
+}
+#endregion
