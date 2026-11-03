@@ -48,6 +48,17 @@ function SC_game_dialogue(_text_id)
 			SC_text("We don't have capital letters dingus.", "portrait_test_alt", -1);
 				SC_text_shake(30, 36);
 		break;
+		case "example_showoff":
+			SC_text("Yo! This is a conversation that'll show off all the new effects n shit!", "portrait_test", 1);
+			SC_text("I can be happy! You'll notice that my sfx changes when my expression changes.", "portrait_test_h", 1);
+			SC_text("Every portrait can have it's own noise.", "portrait_test_h", 1);
+			SC_text("The portrait can also switch sides!", "portrait_test_alt", -1);
+			SC_text("I can also have Crazy Super Cool effects inside the dialogue!", "portrait_test", 1);
+				SC_text_coloured(16,21,c_red, c_red, c_red, c_red);
+				SC_text_float(22, 27);
+				SC_text_shake(28, 32);
+			
+		break;
 		#endregion
 	}
 }
