@@ -108,7 +108,7 @@ if text_pause_timer <= 0
 		draw_character += speed_text;
 		draw_character = clamp(draw_character,0,length_text[page]);
 		var _check_character = string_char_at(text[page], draw_character);
-		if _check_character == "." || _check_character == "?" || _check_character == "!"
+		if _check_character == "." || _check_character == "?" || _check_character == "!" || _check_character == ","
 		{
 			text_pause_timer = text_pause_time;
 			if ! audio_is_playing(sound[page])
@@ -231,6 +231,6 @@ if draw_character == length_text[page] && page == nof_pages - 1
 for(var c = 0; c < draw_character; c++)
 {
 	//the text
-	draw_text(character_x[c, page], character_y[c, page], character[c, page]);
+	draw_text_colour(character_x[c, page], character_y[c, page], character[c, page], colour_1[c, page], colour_2[c, page], colour_3[c, page], colour_4[c, page], 1);
 }
 #endregion

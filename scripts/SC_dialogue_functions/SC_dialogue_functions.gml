@@ -8,7 +8,38 @@ function SC_set_defaults_for_text()
 	speaker_sprite[nof_pages] = noone;
 	speaker_side[nof_pages] = 1;
 	sound[nof_pages] = SFX_medium;
+	
+	//vars for every character/letter
+	for (var c = 0; c < 999; c++)
+	{
+		colour_1[c, nof_pages] = c_white;
+		colour_2[c, nof_pages] = c_white;
+		colour_3[c, nof_pages] = c_white;
+		colour_4[c, nof_pages] = c_white;
+	}
 }
+
+#region text VFX
+
+/// @param first_char
+/// @param last_char
+/// @param colour_1
+/// @param colour_2
+/// @param colour_3
+/// @param colour_4
+function SC_text_coloured(_start, _end, _col1, _col2, _col3, _col4)
+{
+	for (var c = _start; c <= _end; c++)
+	{
+		colour_1[c, nof_pages-1] = _col1;
+		colour_2[c, nof_pages-1] = _col2;
+		colour_3[c, nof_pages-1] = _col3;
+		colour_4[c, nof_pages-1] = _col4;
+	}
+}
+
+#endregion
+
 
 /// @param text
 /// @param [character]
