@@ -12,7 +12,7 @@ if !setup
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
 	
-	for (var p = 0; p < nof_pages; p++) // p stands for page
+	for (var p = 0; p < page_number; p++) // p stands for page
 	{
 		
 		//how many characters are on each page
@@ -58,8 +58,10 @@ if !setup
 			{
 				line_break_position[line_break_number[p], p] = last_free_space;
 				line_break_number[p]++;
+				
 				var _text_up_to_last_space = string_copy(text[p], 1, last_free_space);
 				var _last_free_space_string = string_char_at(text[p], last_free_space);
+				
 				line_break_offset[p] = string_width(_text_up_to_last_space) - string_width(_last_free_space_string);
 			}
 		}
@@ -111,6 +113,7 @@ if text_pause_timer <= 0
 		if _check_character == "." || _check_character == "?" || _check_character == "!" || _check_character == ","
 		{
 			text_pause_timer = text_pause_time;
+			
 			if ! audio_is_playing(sound[page])
 			{
 				audio_play_sound(sound[page], 7, false);
@@ -118,7 +121,7 @@ if text_pause_timer <= 0
 		}
 		else
 		{
-			//type sound
+			//typing sound
 			if sound_count < sound_delay
 			{
 				sound_count++;
@@ -142,27 +145,26 @@ if acceptkey
 {
 	if draw_character == length_text[page]
 	{
-		if page < nof_pages-1
+		if page < page_number-1
 		{
+			//go to the next page
 			page++;
 			draw_character = 0;
 		}
-		else
+		else //if you have reached the last page, check if the player made a choice. If not, kill yourself.
 		{	
 			//linking if options in dialogue
 			if option_number > 0
 			{
-				create_textbox(option_link_id[option_position]);
+				create_textbox(option_link_id[option_position]); //create the textbox for the options
 			}
-			
-			O_player.in_dialogue = false;
 			
 			instance_destroy();
 		}
 	}
 	else
 	{
-		draw_character = length_text[page];
+		draw_character = length_text[page]; //draw the text
 	}
 }
 #endregion
@@ -178,7 +180,7 @@ textbox_sprite_height = sprite_get_height(textbox_sprite[page]);
 if speaker_sprite[page] != noone
 {
 	sprite_index = speaker_sprite[page];
-	if draw_character == length_text[page] {image_index = 0};
+	if draw_character == length_text[page] {image_index = 0}; //only have it be animated when the text is typing
 	
 	var _speaker_x = box_x + portrait_x_offset[page];
 	if speaker_side[page] == -1 {_speaker_x += sprite_width};
@@ -195,10 +197,10 @@ draw_sprite_ext
 textbox_width/textbox_sprite_width, textbox_height/textbox_sprite_height, 0, c_white, 1)
 #endregion
 #region options
-if draw_character == length_text[page] && page == nof_pages - 1
+if draw_character == length_text[page] && page == page_number - 1
 {
 	
-	//sdelecting
+	//selecting
 	option_position += downkey - upkey;
 	option_position = clamp(option_position,0,option_number-1);
 	
@@ -253,7 +255,6 @@ for(var c = 0; c < draw_character; c++)
 			_shake_y = lengthdir_y(1, shake_direction[c, page]);
 		}
 	}
-	
 	
 	//the text
 	draw_text_colour(character_x[c, page] + _shake_x, character_y[c, page] + _float_y + _shake_y, character[c, page], colour_1[c, page], colour_2[c, page], colour_3[c, page], colour_4[c, page], 1);

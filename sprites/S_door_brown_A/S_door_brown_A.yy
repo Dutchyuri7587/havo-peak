@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"doors",
-    "path":"folders/sprites/doors.yy",
+    "path":"folders/sprites/tilesets/doors.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,13 +1,16 @@
 get_controls();
 
+//set your direction
 Xspeed = (rightkey - leftkey) * movespeed;
 Yspeed = (downkey - upkey) * movespeed;
 
 #region collision
+//if im gonna hit something on my x on my next step, stop moving in x.
 if place_meeting(x+Xspeed,y,O_hitbox)
 {
 	Xspeed = 0;
 }
+//if im gonna hit something on my y on my next step, stop moving in y.
 if place_meeting(x,y+Yspeed,O_hitbox)
 {
 	Yspeed = 0;
@@ -15,7 +18,7 @@ if place_meeting(x,y+Yspeed,O_hitbox)
 #endregion
 
 #region movement
-if !in_dialogue
+if !in_dialogue //if im not in dialogue
 {
 	if rightkey
 	{
@@ -45,7 +48,7 @@ if !in_dialogue
 #region interaction
 if acceptkey && !in_dialogue
 {
-	interact_timer = interact_time;
+	interact_timer = interact_time;//setup the timer
 	if direction_p == 1 //right
 	{
 		instance_create_depth(x+8, y-8, -50, O_interacter);
@@ -65,6 +68,7 @@ if acceptkey && !in_dialogue
 	
 }
 
+//countdown the timer
 if interact_timer > 0
 {
 	interact_timer--;

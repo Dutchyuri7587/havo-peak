@@ -9,7 +9,6 @@ function get_controls()
 	downkey = keyboard_check(vk_down) + keyboard_check(ord("S"));
 		downkey = clamp(downkey,0,1);
 		
-		
 	debugkey = keyboard_check_pressed(vk_backspace) + keyboard_check_pressed(ord("L"));
 		debugkey = clamp(debugkey,0,1);
 	acceptkey = keyboard_check_pressed(ord("Z"));

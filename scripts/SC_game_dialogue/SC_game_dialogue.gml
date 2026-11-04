@@ -1,9 +1,9 @@
 ///@param text_id
 function SC_game_dialogue(_text_id)
 {
-	switch(_text_id)
+	switch(_text_id) //PUT ALL DIALOGUE IN THIS SWITCH STATEMENT
 	{
-		#region example/test
+		#region example/test dialogue
 		case "example":
 			SC_text("This is an example of some dialogue from the game dialogue script!");
 			SC_text("This is a second line");
@@ -61,10 +61,19 @@ function SC_game_dialogue(_text_id)
 				SC_text_coloured(16,21,c_red, c_red, c_red, c_red);
 				SC_text_float(22, 27);
 				SC_text_shake(28, 32);
-			break;
-		#endregion
-		#region 
-		
+			SC_text("You don't have to use a speaker!");
+				SC_text_float(10,14)
+			SC_text("You can also make choices, which makes it so you can have actual conversations.");
+			SC_text("Isn't that cool?");
+				SC_option("Yes", "example_ch_yes");
+				SC_option("No", "example_ch_no");		
+				break;
+				case "example_ch_yes":
+					SC_text("Great!");
+					break;
+				case "example_ch_no":	
+					SC_text("Oh.....");
+					break;
 		#endregion
 	}
 }

@@ -9,8 +9,8 @@
   "name":"O_music_zone",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"Technical",
+    "path":"folders/objects/Technical.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"Known_bugs",
+  "name":"Known_bugs",
+  "parent":{
+    "name":"havo-peak",
+    "path":"havo-peak.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

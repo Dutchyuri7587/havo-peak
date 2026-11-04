@@ -1,0 +1,1 @@
+O_player.in_dialogue = false; //let the player move around again

@@ -1,1 +1,1 @@
-dialogue_id = "example";
+dialogue_id = "example_showoff"; //the dialogue you want the nps to have
