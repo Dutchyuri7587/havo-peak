@@ -54,3 +54,5 @@ last_free_space = 0;
 text_pause_timer = 0;
 text_pause_time = 16;
 #endregion
+
+O_player.in_dialogue = true;

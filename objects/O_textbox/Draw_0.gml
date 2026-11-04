@@ -137,7 +137,7 @@ else
 	text_pause_timer--;
 }
 #endregion
-#region go through pages
+#region go through pages //// THIS IS WHERE THE BOX DESTROYS ITSELF
 if acceptkey
 {
 	if draw_character == length_text[page]
@@ -154,6 +154,9 @@ if acceptkey
 			{
 				create_textbox(option_link_id[option_position]);
 			}
+			
+			O_player.in_dialogue = false;
+			
 			instance_destroy();
 		}
 	}

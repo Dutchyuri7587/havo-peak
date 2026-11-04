@@ -19,21 +19,25 @@ if !in_dialogue
 {
 	if rightkey
 	{
-		face = 1
-		x += Xspeed
+		face = 1;
+		direction_p = 1;
+		x += Xspeed;
 	}
 	if leftkey
 	{
-		face = -1
-		x += Xspeed
+		face = -1;
+		direction_p = 2;
+		x += Xspeed;
 	}
 	if upkey
 	{
-		y += Yspeed
+		direction_p = 3;
+		y += Yspeed;
 	}
 	if downkey
 	{
-		y += Yspeed
+		direction_p = 4;
+		y += Yspeed;
 	}
 }
 #endregion
@@ -42,8 +46,23 @@ if !in_dialogue
 if acceptkey && !in_dialogue
 {
 	interact_timer = interact_time;
-	//in_dialogue = true;
-	instance_create_depth(x, y-16, -50, O_interacter)
+	if direction_p == 1 //right
+	{
+		instance_create_depth(x+8, y-8, -50, O_interacter);
+	}
+	if direction_p == 2 //left
+	{
+		instance_create_depth(x-8, y-8, -50, O_interacter);
+	}
+	if direction_p == 3 //up
+	{
+		instance_create_depth(x, y-16, -50, O_interacter);
+	}
+	if direction_p == 4 // down
+	{
+		instance_create_depth(x, y+8, -50, O_interacter);
+	}
+	
 }
 
 if interact_timer > 0

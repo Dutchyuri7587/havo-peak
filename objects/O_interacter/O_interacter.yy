@@ -36,5 +36,5 @@
     "path":"sprites/S_interacter_hitbox/S_interacter_hitbox.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
