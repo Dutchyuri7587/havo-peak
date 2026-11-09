@@ -150,6 +150,7 @@ if acceptkey
 			//go to the next page
 			page++;
 			draw_character = 0;
+			O_player.in_dialogue = true;
 		}
 		else //if you have reached the last page, check if the player made a choice. If not, kill yourself.
 		{	
@@ -158,7 +159,6 @@ if acceptkey
 			{
 				create_textbox(option_link_id[option_position]); //create the textbox for the options
 			}
-			
 			instance_destroy();
 		}
 	}

@@ -1,1 +1,4 @@
-O_player.in_dialogue = false; //let the player move around again
+if !option_number > 0
+{
+	O_player.in_dialogue = false;
+}

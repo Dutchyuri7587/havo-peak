@@ -82,7 +82,6 @@ function SC_text_shake(_start, _end)
 function SC_text(_text)
 {
 	SC_set_defaults_for_text();
-	
 	text[page_number] = _text; //grab the text from the page your on
 	
 	if argument_count > 1
@@ -108,7 +107,6 @@ function SC_text(_text)
 				break;
 		}
 	}
-	
 	//which side should the speaker be on?
 	if argument_count > 2
 	{

@@ -1,1 +1,1 @@
-* Choosing an option during dialogue lets the player move around before the dialogue is properly done
+* The text wrapping isn't properly set.
