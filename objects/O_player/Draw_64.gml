@@ -1,1 +1,1 @@
-draw_text(50,50,string(in_dialogue));//debug
+draw_text_transformed(50,50,string(immobile),4,4,0);//debug

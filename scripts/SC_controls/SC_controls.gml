@@ -22,4 +22,6 @@ function get_controls()
 		debugkey = clamp(debugkey,0,1);
 	acceptkey = keyboard_check_pressed(ord("Z"));
 		acceptkey = clamp(acceptkey,0,1);
+	menukey = keyboard_check_pressed(ord("X"));
+		menukey = clamp(menukey,0,1);
 }

@@ -55,6 +55,7 @@
     {"id":{"name":"O_music_player","path":"objects/O_music_player/O_music_player.yy",},},
     {"id":{"name":"O_music_zone","path":"objects/O_music_zone/O_music_zone.yy",},},
     {"id":{"name":"O_mysteryman","path":"objects/O_mysteryman/O_mysteryman.yy",},},
+    {"id":{"name":"O_pauze_menu","path":"objects/O_pauze_menu/O_pauze_menu.yy",},},
     {"id":{"name":"O_player","path":"objects/O_player/O_player.yy",},},
     {"id":{"name":"O_settings_dialogue","path":"objects/O_settings_dialogue/O_settings_dialogue.yy",},},
     {"id":{"name":"O_speak_block","path":"objects/O_speak_block/O_speak_block.yy",},},

@@ -18,7 +18,7 @@ if place_meeting(x,y+Yspeed,O_hitbox)
 #endregion
 
 #region movement
-if !in_dialogue //if im not in dialogue
+if !immobile //if im not in dialogue
 {
 	if rightkey
 	{
@@ -46,7 +46,7 @@ if !in_dialogue //if im not in dialogue
 #endregion
 
 #region interaction
-if acceptkey && !in_dialogue
+if acceptkey && !immobile
 {
 	interact_timer = interact_time;//setup the timer
 	if direction_p == 1 //right
@@ -72,5 +72,12 @@ if acceptkey && !in_dialogue
 if interact_timer > 0
 {
 	interact_timer--;
+}
+#endregion
+
+#region menu
+if menukey
+{
+	instance_create_depth(x,y,-100000,O_pauze_menu);
 }
 #endregion

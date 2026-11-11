@@ -55,4 +55,4 @@ text_pause_timer = 0;
 text_pause_time = 16; //how many frames should the typer pause after a pause character
 #endregion
 
-O_player.in_dialogue = true; //this sets the player to be in dialogue the moment the textbox gets made
+O_player.immobile = true; //this sets the player to be in dialogue the moment the textbox gets made

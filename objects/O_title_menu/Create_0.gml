@@ -1,5 +1,5 @@
-width = 96;
-height = 96;
+width = 0;
+height = 0;
 
 //op stands for option
 op_border = 5; //the offset that everything will be from the edges of the menu
