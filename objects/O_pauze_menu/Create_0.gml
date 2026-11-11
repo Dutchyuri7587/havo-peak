@@ -7,7 +7,7 @@ op_space = 10; //how far apart options will be
 
 position = 0;
 
-option[0,0] = "blammed!";
+option[0,0] = "Back to game";
 option[0,1] = "Settings";
 option[0,2] = "Quit";
 
@@ -18,3 +18,6 @@ option[1,3] = "back";
 
 op_length = 0;
 menu_level = 0;
+
+
+noname = 0;

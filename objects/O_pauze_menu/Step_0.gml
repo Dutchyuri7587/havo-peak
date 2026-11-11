@@ -18,7 +18,8 @@ if acceptkey
 			switch(position)
 			{
 				case 0: //blammed
-					
+					O_player.immobile = false;
+					instance_destroy();
 				break;
 				case 1: //settings
 					menu_level = 1;

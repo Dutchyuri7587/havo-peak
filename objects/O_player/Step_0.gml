@@ -76,8 +76,9 @@ if interact_timer > 0
 #endregion
 
 #region menu
-if menukey
+if menukey && !immobile
 {
 	instance_create_depth(x,y,-100000,O_pauze_menu);
+	immobile = true;
 }
 #endregion
