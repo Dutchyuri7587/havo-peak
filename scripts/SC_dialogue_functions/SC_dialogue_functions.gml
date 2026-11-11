@@ -75,6 +75,7 @@ function SC_text_shake(_start, _end)
 
 #endregion
 
+#region actual dialogue functions
 //text function
 /// @param text
 /// @param [character]
@@ -133,3 +134,4 @@ function create_textbox (_text_id)
 		SC_game_dialogue(_text_id);
 	}
 }
+#endregion

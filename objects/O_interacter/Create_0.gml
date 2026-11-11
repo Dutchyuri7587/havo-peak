@@ -1,1 +1,1 @@
-destroytimer = 10;
+destroytimer = 1;

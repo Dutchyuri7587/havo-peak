@@ -23,8 +23,8 @@
   ],
   "name":"R_setup",
   "parent":{
-    "name":"rooms",
-    "path":"folders/rooms.yy",
+    "name":"Internal",
+    "path":"folders/rooms/Internal.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

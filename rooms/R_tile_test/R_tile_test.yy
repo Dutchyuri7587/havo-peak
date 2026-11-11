@@ -163,8 +163,8 @@
   ],
   "name":"R_tile_test",
   "parent":{
-    "name":"rooms",
-    "path":"folders/rooms.yy",
+    "name":"Test",
+    "path":"folders/rooms/Internal/Test.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
